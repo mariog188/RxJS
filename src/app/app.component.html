@@ -1,1 +1,3 @@
-{{todo}}
+<!-- {{(todo$ | async)?.title}} -->
+<img *ngIf="todo$ | async as todo"
+     [src]="todo.image">
